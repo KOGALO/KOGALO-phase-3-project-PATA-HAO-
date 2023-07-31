@@ -1,37 +1,4 @@
 import React, { useState } from 'react';
-
-const featuredHousesData = [
-  {
-    id: 1,
-    title: 'Spacious Villa with Garden',
-    location: 'Ruiru',
-    price: 60000,
-    bedrooms: 4,
-  },
-  {
-    id: 2,
-    title: 'Cozy One Bedroom Fully furnished',
-    location: 'Langata',
-    price: 25000,
-    bedrooms: 1,
-  },
-  {
-    id: 3,
-    title: 'Two Bedroom all ensuite fully furnished',
-    location: 'Ruiru',
-    price: 40000,
-    bedrooms: 2,
-  },
-  {
-    id: 4,
-    title: 'Spacious Sudio Apartments fully furnished',
-    location: 'Kilimani',
-    price: 20000,
-    bedrooms: 1,
-  },
-  
-];
-
 const HomePage = () => {
   const [locationFilter, setLocationFilter] = useState('');
   const [priceFilter, setPriceFilter] = useState('');
@@ -47,7 +14,7 @@ const HomePage = () => {
     <div>
       <h1>Welcome to our House Rental Website!</h1>
 
-      {/Search Filters /}
+
       <div>
         <input
           type="text"
@@ -70,7 +37,6 @@ const HomePage = () => {
         <button onClick={handleSearch}>Search</button>
       </div>
 
-      {/Featured Houses /}
       <h2>Featured Houses</h2>
       <div>
         {featuredHousesData.map((house) => (

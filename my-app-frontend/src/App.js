@@ -1,33 +1,6 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-
-
-import React from 'react';
-import LoginForm from './LoginForm';
-import SignupForm from './SignupForm';
-import ContactForm from './ContactForm';
+import LoginForm from './Src./Components./LoginForm';
+import SignupForm from './Src./Components./SignupForm';
+import ContactForm from './Src./Components./ContactForm';
 
 const App = () => {
   return (
