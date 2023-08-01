@@ -11,7 +11,7 @@ const UpdatelanlordForm = () => {
 
   const fetchLandlords = async () => {
     try {
-      const response = await axios.get('/api/landlords'); // Replace with your backend API endpoint to fetch landlords
+      const response = await axios.get('/landlords'); 
       setLandlords(response.data);
     } catch (error) {
       console.error('Error fetching landlords:', error);
@@ -20,7 +20,7 @@ const UpdatelanlordForm = () => {
 
   const handleAddLandlord = async () => {
     try {
-      const response = await axios.post('/api/landlords', { name: newLandlord }); // Replace with your backend API endpoint to add a new landlord
+      const response = await axios.post('/landlords', { name: newLandlord });
       setNewLandlord('');
       setLandlords([...landlords, response.data]);
     } catch (error) {
@@ -30,7 +30,7 @@ const UpdatelanlordForm = () => {
 
   const handleDeleteLandlord = async (id) => {
     try {
-      await axios.delete(`/api/landlords/${id}`); // Replace with your backend API endpoint to delete a landlord
+      await axios.delete(`/landlords/${id}`);
       setLandlords(landlords.filter((landlord) => landlord.id !== id));
     } catch (error) {
       console.error('Error deleting landlord:', error);

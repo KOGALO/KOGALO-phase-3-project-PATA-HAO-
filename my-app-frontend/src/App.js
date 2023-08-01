@@ -1,7 +1,6 @@
-import LoginForm from './Src./Components./SignupForm';
-import ContactForm from './Src./Components./ContactForm';
-import ContactForm from './Src./Components./UpdatelanlordForm';
-import ContactForm from './Src./Components./LandlordPage';
+import SignupForm from './Components/SignupForm';
+import ContactForm from './Components/ContactForm';
+import LoginForm from './Components/LoginForm';
 
 const App = () => {
   return (

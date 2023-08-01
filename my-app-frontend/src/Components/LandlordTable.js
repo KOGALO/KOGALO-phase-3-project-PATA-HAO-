@@ -11,7 +11,7 @@ const LandlordPage = () => {
 
   const fetchLandlords = async () => {
     try {
-      const response = await axios.get('/api/landlords'); // Replace with your backend API endpoint to fetch landlords
+      const response = await axios.get('/landlords');
       setLandlords(response.data);
     } catch (error) {
       console.error('Error fetching landlords:', error);
